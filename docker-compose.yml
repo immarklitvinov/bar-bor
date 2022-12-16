@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bot:
+    build:
+      context: "pythonBot"
+      dockerfile: Dockerfile
+    volumes:
+      - "./pythonBot:/pythonBot"
+    restart: always
